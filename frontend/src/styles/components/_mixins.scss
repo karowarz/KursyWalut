@@ -1,0 +1,14 @@
+@mixin screenSize($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error ' "#{$breakpoint}" - Nie ma takiej wielkości ekranu';
+  }
+}
+
+@function calc-button-proportions($height-button) {
+  @return $buttonProportion * $height-button;
+}

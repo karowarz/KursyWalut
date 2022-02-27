@@ -1,0 +1,16 @@
+.date-picker {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-evenly;
+  @include screenSize(tablet) {
+    padding: 0 20rem;
+  }
+  &--input {
+    background-color: red;
+  }
+}
+
+.MuiFormControl-root {
+  font-size: 2rem;
+  line-height: 2rem;
+}

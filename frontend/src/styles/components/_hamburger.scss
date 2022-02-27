@@ -1,0 +1,45 @@
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+  margin-right: 2vh;
+  position: fixed;
+  top: 2rem; 
+  right: 1rem;
+  cursor: pointer;
+  @include screenSize(smartphone) {
+    display: none;
+  }
+  &-burger {
+    width: 2rem;
+    height: 0.3rem;
+    border-radius: 10px;
+    background-color: $white;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    margin-right: 2vh;
+  }
+}
+
+.burger1 {
+  transform: rotate(0);
+  &--open {
+    transform: rotate(45deg);
+  }
+}
+.burger2 {
+  transform: translateX(0);
+  &--open {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+.burger3 {
+  transform: rotate(0);
+  &--open {
+    transform: rotate(-45deg);
+  }
+}

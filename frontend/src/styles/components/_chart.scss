@@ -1,0 +1,13 @@
+.chart {
+  @include screenSize(tablet) {
+    padding: 0 9vw;
+  }
+
+  @include screenSize(desktop-small) {
+    padding: 0 15vw;
+  }
+
+  @include screenSize(desktop-medium) {
+    padding: 0 30vw;
+  }
+}

@@ -1,0 +1,58 @@
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  background-color: $darkBlue;
+  align-items: center;
+  height: 7rem;
+  justify-content: space-between;
+  font-size: 1.9rem;
+  @include screenSize(tablet) {
+    font-size: 2rem;
+    height: 6rem;
+  }
+  &__text {
+    display: none;
+    @include screenSize(smartphone) {
+      color: $white;
+      font-weight: bold;
+      margin: 0 1rem;
+      cursor: pointer;
+      display: flex;
+    }
+    &-1 {
+      @include screenSize(smartphone) {
+        display: none;
+      }
+    }
+  }
+  &__logo {
+    color: $white;
+    font-weight: bold;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  &__flexElements {
+    display: flex;
+
+    &--open {
+      display: flex;
+      font-size: 2rem;
+      padding: 0 1rem;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 5rem;
+      right: 0;
+      background-color: $darkBlue;
+      color: $white;
+      height: 20rem;
+      z-index: 10;
+    }
+  }
+  &__text--open {
+    cursor: pointer;
+  }
+}

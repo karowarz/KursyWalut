@@ -1,0 +1,35 @@
+.calculator {
+  margin: 0 10px;
+  &__title {
+    font-size: 4rem;
+    padding-top: 2vh;
+    height: 8vh;
+    line-height: 4vh;
+    text-align: center;
+  }
+  &__container {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+  }
+  &__row {
+    display: flex;
+    margin-top: 2vh;
+  }
+  &__equal {
+    align-items: center;
+    font-size: 2rem;
+    margin: 0px 5px;
+  }
+  &__info {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+div.calculator__row:nth-child(1) > div:nth-child(2) {
+  @include screenSize(desktop-medium) {
+    margin-right: 9px;
+  }
+}

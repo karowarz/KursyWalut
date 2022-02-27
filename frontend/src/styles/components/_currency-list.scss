@@ -1,0 +1,51 @@
+.currencyList {
+  margin-top: 4rem;
+    @include screenSize(tablet) {
+    margin: 0 16vw;
+  }
+  @include screenSize(desktop-small) {
+    margin: 0 20vw;
+  margin-top: 4rem;
+  }
+  @include screenSize(desktop-medium) {
+    margin: 0 30vw;
+  margin-top: 4rem;
+  }
+}
+
+.currencyUl {
+  @include screenSize(tablet) {
+    margin: 0 16vw;
+  }
+  @include screenSize(desktop-small) {
+    margin: 0 20vw;
+  }
+  @include screenSize(desktop-medium) {
+    margin: 0 35vw;
+  }
+}
+
+.currencyRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  &-active {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $darkGreen;
+    cursor: pointer;
+  }
+  &:nth-child(odd) {
+    background: $lightBlue;
+  }
+  &:hover {
+    background-color: $darkBlue;
+  }
+  &__element {
+    width: 2rem;
+  }
+}

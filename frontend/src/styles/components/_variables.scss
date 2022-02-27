@@ -1,0 +1,28 @@
+$lightBlue: #d3e3fc;
+$darkBlue: #77a6f7;
+$darkGreen: #00887a;
+$pink: #ffccbc;
+$white: #ffffff;
+$red: #ff0000;
+
+$radius: 0.5rem;
+
+$breakpoints: (
+  smartphone: (
+    min-width: 460px,
+  ),
+  tablet: (
+    min-width: 800px,
+  ),
+  desktop-small: (
+    min-width: 1280px,
+  ),
+  desktop-medium: (
+    min-width: 1600px,
+  ),
+  desktop-large: (
+    min-width: 1900px,
+  ),
+);
+
+$buttonProportion: 2.6;

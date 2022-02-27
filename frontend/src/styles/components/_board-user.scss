@@ -1,0 +1,61 @@
+.boardUser {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 4rem;
+    margin-top: 4vh;
+    height: 8vh;
+    line-height: 4vh;
+    text-align: center;
+  }
+  &__inputRow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include screenSize(desktop-medium) {
+      flex-direction: row;
+      padding: 0 60rem;
+    }
+  }
+
+  &__manageList {
+    display: flex;
+    flex-direction: column;
+    @include screenSize(desktop-medium) {
+      padding: 0 37vw;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &--element1 {
+      flex-grow: 2;
+    }
+    &--element2 {
+      @include screenSize(desktop-medium) {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__button {
+    @include screenSize(desktop-medium) {
+      height: 20px;
+      width: 40px;
+    }
+  }
+  &__row--ul {
+    cursor: pointer;
+    padding: 0 4rem;
+    border: 2px solid red;
+    @include screenSize(desktop-medium) {
+    }
+  }
+}
+
+.selectFavorite {
+  font-size: 2rem;
+  border: 2px solid $darkGreen;
+  border-radius: $radius;
+  margin: 2rem 0;
+}
